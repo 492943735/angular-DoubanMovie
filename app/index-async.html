@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>异步加载库</title>
+	<!-- load.js script.js 度可以帮我们异步加载js文件-->
+	<script src="bower_components/script.js/dist/script.js"></script>
+	<script src="bower_components/jquery/dist/jquery.js"></script>
+	<script>
+		 $script('./bower_components/jquery/dist/jquery.js',
+		 	'bower_components/jquery/dist/jquery.js',
+		 	function(){
+		 	
+		 	console.log(angular);
+		 	console.log(jQuery);
+		 });
+	</script>
+</head>
+<body>
+	
+</body>
+</html>
